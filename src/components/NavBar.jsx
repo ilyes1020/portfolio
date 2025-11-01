@@ -1,7 +1,7 @@
 import logo from "../assets/cloud-sun-alt-svgrepo-com.svg";
 function NavBar() {
   return (
-    <header className="bg-red-500 p-3">
+    <header className="sticky top-0 bg-red-500 p-3">
       <div className="flex justify-around">
         <a href="#home">
           <img src={logo} className="h-8 w-8" />
