@@ -41,7 +41,7 @@ function Projects() {
     {
       title: "Distributed Key-Value Store",
       description:
-        "A distributed key-value store built in C with consistent hashing (SHA-1), inspired by Amazon Dynamo. Features configurable quorum-based replication (N, W, R) and peer-to-peer architecture with virtual nodes for fault tolerance.",
+        "A \"distributed key-value store\" built in C with consistent hashing (SHA-1), inspired by Amazon Dynamo. Features configurable quorum-based replication (N, W, R) and peer-to-peer architecture with virtual nodes for fault tolerance.",
       technologies: ["C", "Concurrency", "Network"],
       github: "https://github.com/ilyes1020/distributed-key-value-store",
       demo: null,
@@ -82,7 +82,7 @@ function Projects() {
       title: "ICMon",
       description:
         "A tile-based RPG developed in Java inspired by Pokémon. Implemented core mechanics including movement, battles and NPC interactions using Object-Oriented Programming principles.",
-      technologies: ["Java", "OOP"],
+      technologies: ["Java", "JavaFX", "OOP"],
       github: "https://github.com/ilyes1020/icmon",
       demo: "/videos/icmon.mp4",
       image: "/images/icmon.png",
@@ -90,12 +90,23 @@ function Projects() {
     {
       title: "Platformer Battle Royale",
       description:
-        "A 2D beat 'em up game developed in Python using Pygame, featuring multiple levels and smooth player controls. Designed engaging gameplay mechanics and level designs to provide an enjoyable experience. Includes optional Arduino controls for enhanced gameplay.",
+        "A 2D beat 'em up developed in Python using Pygame, featuring multiple levels and player controls. Designed gameplay mechanics and level designs. Includes optional Arduino controls for enhanced gameplay.",
       technologies: ["Python", "Pygame", "Arduino"],
       github: "https://github.com/ilyes1020/platformer-battle-royale",
       demo: "/videos/pbr.mp4",
       image: "/images/pbr.png",
     },
+
+    // Other
+    {
+      title: "Cryptography & Steganography",
+      description:
+        "A Java project combining classic cryptosystems (ex: Caesar, CBC) with image steganography. Includes helper utilities, encryption implementations, and tools to embed and extract encrypted messages inside images.",
+      technologies: ["Java", "Cryptography", "Steganography"],
+      github: "https://github.com/ilyes1020/crypto-stegano",
+      demo: null,
+      image: "/images/crypto.png",
+    }
   ];
 
   return (
