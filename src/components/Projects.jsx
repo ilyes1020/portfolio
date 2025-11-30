@@ -86,7 +86,16 @@ function Projects() {
       github: "https://github.com/ilyes1020/icmon",
       demo: "/videos/icmon.mp4",
       image: "/images/icmon.png",
-    }
+    },
+    {
+      title: "Platformer Battle Royale",
+      description:
+        "A 2D beat 'em up game developed in Python using Pygame, featuring multiple levels and smooth player controls. Designed engaging gameplay mechanics and level designs to provide an enjoyable experience. Includes optional Arduino controls for enhanced gameplay.",
+      technologies: ["Python", "Pygame", "Arduino"],
+      github: "https://github.com/ilyes1020/platformer-battle-royale",
+      demo: "/videos/pbr.mp4",
+      image: "/images/pbr.png",
+    },
   ];
 
   return (
