@@ -1,11 +1,5 @@
-import {
-  Mail,
-  MapPin,
-  Github,
-  Linkedin,
-  Send,
-  MessageSquare,
-} from "lucide-react";
+import { Mail, MapPin, Github, Linkedin, MessageSquare } from "lucide-react";
+import ContactForm from "./ContactForm";
 import { useEffect, useRef, useState } from "react";
 
 function Contact() {
@@ -185,123 +179,7 @@ function Contact() {
           </div>
 
           {/* Right side - Contact Form */}
-          <div
-            className={`transition-all duration-1000 delay-300 ${
-              isVisible
-                ? "opacity-100 translate-x-0"
-                : "opacity-0 translate-x-10"
-            }`}
-          >
-            <form
-              onSubmit={handleSubmit}
-              className="p-8 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-xl"
-            >
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-                Send Me a Message
-              </h3>
-
-              {/* Name Input */}
-              <div className="mb-4">
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                >
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all outline-none"
-                  placeholder="John Doe"
-                />
-              </div>
-
-              {/* Email Input */}
-              <div className="mb-4">
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                >
-                  Your Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all outline-none"
-                  placeholder="john@example.com"
-                />
-              </div>
-
-              {/* Subject Input */}
-              <div className="mb-4">
-                <label
-                  htmlFor="subject"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                >
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all outline-none"
-                  placeholder="Project Inquiry"
-                />
-              </div>
-
-              {/* Message Textarea */}
-              <div className="mb-6">
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows="5"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all outline-none resize-none"
-                  placeholder="Tell me about your project..."
-                ></textarea>
-              </div>
-
-              {/* Submit Button */}
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className={`w-full px-6 py-3 bg-linear-to-r from-cyan-500 to-blue-600 text-white rounded-lg font-medium hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center gap-2 ${
-                  isSubmitting ? "opacity-70 cursor-not-allowed" : ""
-                }`}
-              >
-                {isSubmitting ? (
-                  <>
-                    <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                    <span>Sending...</span>
-                  </>
-                ) : (
-                  <>
-                    <Send size={18} />
-                    <span>Send Message</span>
-                  </>
-                )}
-              </button>
-            </form>
-          </div>
+          <ContactForm isVisible={isVisible} />
         </div>
 
         {/* Footer */}
