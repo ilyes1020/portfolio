@@ -87,7 +87,7 @@ function Home() {
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:ilyes.rouibi@epfl.ch"
+                href="mailto:irouibi@gmail.com"
                 className="p-3 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-cyan-500 hover:text-white dark:hover:bg-cyan-500 dark:hover:text-white transition-all duration-300 hover:scale-110"
                 aria-label="Email"
               >

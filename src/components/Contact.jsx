@@ -62,8 +62,8 @@ function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "ilyes.rouibi@epfl.ch",
-      link: "mailto:ilyes.rouibi@epfl.ch",
+      value: "irouibi@gmail.com",
+      link: "mailto:irouibi@gmail.com",
     },
     {
       icon: Github,
