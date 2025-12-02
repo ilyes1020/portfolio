@@ -69,7 +69,7 @@ function Contact() {
       icon: Linkedin,
       title: "LinkedIn",
       value: "linkedin.com/in/ilyes-rouibi-60a1a8303",
-      link: "https://www.linkedin.com/in/ilyes-rouibi-60a1a8303",
+      link: "https://www.linkedin.com/in/ilyes-rouibi-60a1a8303/",
     },
     {
       icon: MapPin,
