@@ -35,7 +35,7 @@ function Home() {
                 Ilyes Rouibi
               </h1>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-600 dark:text-gray-400">
-                Software Developer
+                Software Engineer
               </h2>
             </div>
 
@@ -78,7 +78,7 @@ function Home() {
                 <Github size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/in/ilyes-rouibi-60a1a8303"
+                href="https://www.linkedin.com/in/ilyes-rouibi-60a1a8303/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-cyan-500 hover:text-white dark:hover:bg-cyan-500 dark:hover:text-white transition-all duration-300 hover:scale-110"
