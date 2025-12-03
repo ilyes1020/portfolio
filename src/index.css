@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "tailwindcss-safe-area";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -7,12 +8,6 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   min-height: 100vh;
-  /* Fill notch area with background color */
-  background-color: #ffffff;
-}
-
-html.dark {
-  background-color: #111827;
 }
 
 body {
