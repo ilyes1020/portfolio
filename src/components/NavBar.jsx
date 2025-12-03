@@ -8,25 +8,12 @@ function NavBar() {
 
   // Handle scroll effect
   useEffect(() => {
-    const scrollContainer = document.getElementById('scroll-container');
-    if (!scrollContainer) return;
-
     const handleScroll = () => {
-      setScrolled(scrollContainer.scrollTop > 20);
+      setScrolled(window.scrollY > 20);
     };
-    scrollContainer.addEventListener("scroll", handleScroll);
-    return () => scrollContainer.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // Block scroll when mobile menu is open
-  useEffect(() => {
-    if (isOpen) {
-      document.body.classList.add('menu-open');
-    } else {
-      document.body.classList.remove('menu-open');
-    }
-    return () => document.body.classList.remove('menu-open');
-  }, [isOpen]);
 
   // Handle dark mode toggle
   useEffect(() => {
@@ -61,14 +48,9 @@ function NavBar() {
   const handleNavClick = (e, href) => {
     e.preventDefault();
     setIsOpen(false);
-    const scrollContainer = document.getElementById('scroll-container');
     const element = document.querySelector(href);
-    if (element && scrollContainer) {
-      const offsetTop = element.offsetTop;
-      scrollContainer.scrollTo({
-        top: offsetTop,
-        behavior: 'smooth'
-      });
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
