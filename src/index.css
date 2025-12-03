@@ -12,6 +12,9 @@ body {
   overflow-x: hidden;
   width: 100%;
   position: relative;
+  /* Support for iPhone notch */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 
