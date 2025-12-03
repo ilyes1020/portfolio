@@ -6,15 +6,20 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  /* Support for iPhone notch - extend background behind notch */
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 body {
   overflow-x: hidden;
   width: 100%;
   position: relative;
+  margin: 0;
+  padding: 0;
   /* Support for iPhone notch */
-  padding-top: env(safe-area-inset-top);
-  padding-bottom: env(safe-area-inset-bottom);
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 
