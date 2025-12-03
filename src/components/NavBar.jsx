@@ -15,24 +15,27 @@ function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Handle dark mode toggle and meta theme-color
+  // Handle dark mode toggle
   useEffect(() => {
-    // For iOS Safari theme color
-    let metaThemeColor = document.querySelector("meta[name='theme-color']");
-    
-    if (!metaThemeColor) {
-       metaThemeColor = document.createElement('meta');
-       metaThemeColor.name = "theme-color";
-       document.head.appendChild(metaThemeColor);
-    }
 
     if (darkMode) {
       document.documentElement.classList.add("dark");
-      metaThemeColor.setAttribute("content", "#111827"); // Dark color
     } else {
       document.documentElement.classList.remove("dark");
-      metaThemeColor.setAttribute("content", "#ffffff"); // Light color
     }
+
+    // Update meta theme-color for IOS Safari
+    const themeColor = darkMode ? "#111827" : "#ffffff";
+    
+    let metaTheme = document.querySelector("meta[name='theme-color']");
+    
+    if (!metaTheme) {
+      metaTheme = document.createElement("meta");
+      metaTheme.name = "theme-color";
+      document.head.appendChild(metaTheme);
+    }
+    
+    metaTheme.setAttribute("content", themeColor);
   }, [darkMode]);
 
   const navItems = [
