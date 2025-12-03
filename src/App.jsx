@@ -9,24 +9,24 @@ function App() {
   return (
     <div className="min-h-screen pt-safe pb-safe bg-white dark:bg-linear-to-br dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-white overflow-x-hidden w-full">
       <NavBar />
-      
+
       <main>
         <section id="home">
           <Home />
         </section>
-        
+
         <section id="about">
           <About />
         </section>
-        
+
         <section id="skills">
           <Skills />
         </section>
-        
+
         <section id="projects">
           <Projects />
         </section>
-        
+
         <section id="contact">
           <Contact />
         </section>
