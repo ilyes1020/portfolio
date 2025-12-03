@@ -55,7 +55,7 @@ function Projects() {
         "A modern, responsive portfolio website showcasing projects, skills, and experience. Built with React and Tailwind CSS, featuring dark mode, smooth animations, and an elegant UI/UX design.",
       technologies: ["React", "Tailwind CSS", "Web Development"],
       github: "https://github.com/ilyes1020/portfolio",
-      demo: "https://ilyes1020.github.io",
+      demo: "https://ilyes-rouibi.vercel.app",
       image: "/images/portfolio.png",
     },
     {
