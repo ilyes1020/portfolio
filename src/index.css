@@ -6,9 +6,13 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  /* Support for iPhone notch - extend background behind notch */
   min-height: 100vh;
-  min-height: -webkit-fill-available;
+  /* Fill notch area with background color */
+  background-color: #ffffff;
+}
+
+html.dark {
+  background-color: #111827;
 }
 
 body {
@@ -17,9 +21,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  /* Support for iPhone notch */
   min-height: 100vh;
-  min-height: -webkit-fill-available;
 }
 
 

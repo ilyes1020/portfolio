@@ -7,13 +7,7 @@ import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div 
-      className="min-h-screen bg-white dark:bg-linear-to-br dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-white overflow-x-hidden w-full"
-      style={{
-        paddingTop: 'env(safe-area-inset-top)',
-        paddingBottom: 'env(safe-area-inset-bottom)'
-      }}
-    >
+    <div className="min-h-screen bg-white dark:bg-linear-to-br dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-white overflow-x-hidden w-full">
       <NavBar />
       
       <main>
