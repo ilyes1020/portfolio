@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
@@ -6,6 +7,15 @@ import NavBar from "./components/NavBar";
 import Skills from "./components/Skills";
 
 function App() {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      if ("scrollRestoration" in window.history) {
+        window.history.scrollRestoration = "manual";
+      }
+      window.scrollTo(0, 0);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen pb-safe bg-white dark:bg-linear-to-br dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-white overflow-x-hidden w-full">
       <NavBar />
