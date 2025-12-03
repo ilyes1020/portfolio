@@ -43,13 +43,10 @@ function NavBar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 pt-safe transition-all duration-500 
-        bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg
-        md:bg-transparent md:shadow-none
-        ${
+      className={`fixed top-0 left-0 right-0 z-50 pt-safe transition-all duration-500 ${
         scrolled
-          ? "md:bg-white/95 md:dark:bg-gray-900/95 md:backdrop-blur-md md:shadow-lg"
-          : ""
+          ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

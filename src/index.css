@@ -8,6 +8,11 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   min-height: 100vh;
+  background-color: #ffffff;
+}
+
+html.dark {
+  background-color: #111827;
 }
 
 body {
