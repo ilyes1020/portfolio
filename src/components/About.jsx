@@ -55,12 +55,14 @@ function About() {
             }`}
           >
             <div className="relative">
-              <div className="aspect-square rounded-2xl bg-linear-to-br from-cyan-500/20 to-blue-600/20 dark:from-cyan-500/10 dark:to-blue-600/10 p-8 backdrop-blur-sm border border-gray-200 dark:border-gray-700 shadow-xl overflow-hidden">
-                <img
-                  src="/about_photo.JPEG"
-                  alt="Ilyes Rouibi"
-                  className="w-full h-full rounded-xl object-cover object-[44%_center]"
-                />
+              <div className="aspect-square rounded-2xl bg-linear-to-br from-cyan-500/20 to-blue-600/20 dark:from-cyan-500/10 dark:to-blue-600/10 p-4 sm:p-8 backdrop-blur-sm border border-gray-200 dark:border-gray-700 shadow-xl">
+                <div className="w-full h-full rounded-xl overflow-hidden">
+                  <img
+                    src="/about_photo.JPEG"
+                    alt="Ilyes Rouibi"
+                    className="w-full h-full rounded-xl object-cover object-[44%_center]"
+                  />
+                </div>
               </div>
               {/* Decorative elements */}
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-cyan-500/20 dark:bg-cyan-500/10 rounded-full blur-2xl -z-10"></div>
