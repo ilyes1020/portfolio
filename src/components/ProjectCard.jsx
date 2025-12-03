@@ -24,8 +24,8 @@ function ProjectCard({ project, index, isVisible }) {
               </div>
             </div>
           )}
-          {/* Overlay on hover */}
-          <div className="absolute inset-0 bg-linear-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 gap-3">
+          {/* Overlay - visible on mobile, hover effect on desktop */}
+          <div className="absolute inset-0 bg-linear-to-t from-gray-900/80 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4 gap-3">
             {project.github && (
               <a
                 href={project.github}
