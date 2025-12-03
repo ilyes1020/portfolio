@@ -17,7 +17,6 @@ function NavBar() {
 
   // Handle dark mode toggle
   useEffect(() => {
-
     if (darkMode) {
       document.documentElement.classList.add("dark");
     } else {
@@ -26,15 +25,15 @@ function NavBar() {
 
     // Update meta theme-color for IOS Safari
     const themeColor = darkMode ? "#111827" : "#ffffff";
-    
+
     let metaTheme = document.querySelector("meta[name='theme-color']");
-    
+
     if (!metaTheme) {
       metaTheme = document.createElement("meta");
       metaTheme.name = "theme-color";
       document.head.appendChild(metaTheme);
     }
-    
+
     metaTheme.setAttribute("content", themeColor);
   }, [darkMode]);
 
@@ -93,7 +92,8 @@ function NavBar() {
           <div className="hidden md:flex items-center space-x-4 z-20">
             <a
               href="/cv.pdf"
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 bg-linear-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-500/50 font-medium"
             >
               <Download size={18} />
@@ -157,7 +157,8 @@ function NavBar() {
           ))}
           <a
             href="/cv.pdf"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 px-4 py-2 bg-linear-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 mt-2 font-medium"
           >
             <Download size={18} />
