@@ -221,7 +221,7 @@ function Skills() {
           }`}
         >
           <p className="text-gray-600 dark:text-gray-400 italic">
-            And much more! 🚀
+            And much more!
           </p>
         </div>
       </div>

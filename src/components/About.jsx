@@ -79,7 +79,7 @@ function About() {
             }`}
           >
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
-              Hello! Nice to meet you 👋
+              Hello! Nice to meet you
             </h3>
             <div className="space-y-4 text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
               <p>
