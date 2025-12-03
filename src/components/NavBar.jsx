@@ -15,12 +15,23 @@ function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Handle dark mode
+  // Handle dark mode toggle and meta theme-color
   useEffect(() => {
+    // For iOS Safari theme color
+    let metaThemeColor = document.querySelector("meta[name='theme-color']");
+    
+    if (!metaThemeColor) {
+       metaThemeColor = document.createElement('meta');
+       metaThemeColor.name = "theme-color";
+       document.head.appendChild(metaThemeColor);
+    }
+
     if (darkMode) {
       document.documentElement.classList.add("dark");
+      metaThemeColor.setAttribute("content", "#111827"); // Dark color
     } else {
       document.documentElement.classList.remove("dark");
+      metaThemeColor.setAttribute("content", "#ffffff"); // Light color
     }
   }, [darkMode]);
 
