@@ -37,18 +37,19 @@ function NavBar() {
     setIsOpen(false);
     const element = document.querySelector(href);
     if (element) {
-      const yOffset = -80; 
-      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 pt-safe transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 pt-safe transition-all duration-500 
+        bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg
+        md:bg-transparent md:shadow-none
+        ${
         scrolled
-          ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg"
-          : "bg-transparent"
+          ? "md:bg-white/95 md:dark:bg-gray-900/95 md:backdrop-blur-md md:shadow-lg"
+          : ""
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
