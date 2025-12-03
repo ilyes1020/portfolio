@@ -37,13 +37,15 @@ function NavBar() {
     setIsOpen(false);
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const yOffset = -80; 
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
     }
   };
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 pt-safe transition-all duration-500 ${
         scrolled
           ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-md shadow-lg"
           : "bg-transparent"
@@ -144,7 +146,7 @@ function NavBar() {
             </a>
           ))}
           <a
-            href="/cv.pdf" // PLACEHOLDER: Add your CV in public folder
+            href="/cv.pdf"
             download
             className="flex items-center justify-center gap-2 px-4 py-2 bg-linear-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 mt-2 font-medium"
           >
