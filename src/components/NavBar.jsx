@@ -3,7 +3,9 @@ import { Menu, X, Moon, Sun, Download } from "lucide-react";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(
+    typeof window !== "undefined" ? window.scrollY > 20 : false
+  );
   const [darkMode, setDarkMode] = useState(true);
 
   // Handle scroll effect
@@ -11,6 +13,7 @@ function NavBar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
