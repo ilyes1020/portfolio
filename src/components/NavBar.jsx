@@ -91,10 +91,10 @@ function NavBar() {
             ))}
           </div>
 
-          {/* Right side: CV + Dark Mode Toggle */}
+          {/* Right side: Resume + Dark Mode Toggle */}
           <div className="hidden md:flex items-center space-x-4 z-20">
             <a
-              href="/cv.pdf"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 bg-linear-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-500/50 font-medium"
@@ -159,7 +159,7 @@ function NavBar() {
             </a>
           ))}
           <a
-            href="/cv.pdf"
+            href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 px-4 py-2 bg-linear-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 mt-2 font-medium"
