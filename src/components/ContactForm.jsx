@@ -104,7 +104,7 @@ function ContactForm({ isVisible }) {
             name="name"
             required
             className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all outline-none"
-            placeholder="John Doe"
+            placeholder="Son Goku"
           />
         </div>
 
@@ -121,7 +121,7 @@ function ContactForm({ isVisible }) {
             name="email"
             required
             className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all outline-none"
-            placeholder="john@example.com"
+            placeholder="songoku@capsulecorp.com"
           />
         </div>
 
@@ -138,7 +138,7 @@ function ContactForm({ isVisible }) {
             name="subject"
             required
             className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all outline-none"
-            placeholder="Project Inquiry"
+            placeholder="Collaboration Opportunity"
           />
         </div>
 
@@ -155,7 +155,7 @@ function ContactForm({ isVisible }) {
             required
             rows="5"
             className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all outline-none resize-none"
-            placeholder="Tell me about your project..."
+            placeholder="Let's save the earth together..."
           ></textarea>
         </div>
 
