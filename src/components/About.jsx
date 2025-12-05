@@ -79,25 +79,23 @@ function About() {
             }`}
           >
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">
-              Hello! Nice to meet you
+              Hello! Nice to meet you,
             </h3>
             <div className="space-y-4 text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
               <p>
-                I'm a Computer Science student at EPFL, one of Europe's leading
-                technical universities, currently on an academic exchange at KTH
-                . My journey in computer science has been driven by a deep
-                curiosity for understanding how systems work at their core.
+                I'm a Computer Science student at EPFL (QS World #10 in Eng. and
+                Tech.) and right now I'm on exchange at KTH. I like digging into
+                how things work under the hood, especially systems and low-level
+                stuff, but I also enjoy building useful projects end-to-end.
               </p>
               <p>
-                I'm particularly passionate about software engineering and
-                algorithm design. I love tackling challenging problems that
-                require both theoretical knowledge and practical engineering
-                skills.
+                I spend a lot of my time writing code and learning better ways
+                to design software. I care about clean, readable code and
+                getting things to actually work in the real world.
               </p>
               <p>
-                You'll also find me exploring new technologies, such as AI and
-                machine learning. I believe in writing clean, efficient code and
-                continuously learning from every challenge.
+                Lately I’ve been experimenting with AI/ML tools and exploring
+                web projects.
               </p>
             </div>
           </div>
