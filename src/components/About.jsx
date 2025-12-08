@@ -83,8 +83,7 @@ function About() {
             </h3>
             <div className="space-y-4 text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
               <p>
-                I'm a Computer Science student at EPFL (QS World #10 in Eng. and
-                Tech.) and right now I'm on exchange at KTH. I like digging into
+                I'm a Computer Science student at EPFL and right now I'm on exchange at KTH. I like digging into
                 how things work under the hood, especially systems and low-level
                 stuff, but I also enjoy building useful projects end-to-end.
               </p>
